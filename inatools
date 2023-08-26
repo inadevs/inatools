@@ -1,0 +1,95 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Inadevs", "DarkTheme")
+    -- main
+	local Main = Window:NewTab("main")
+    local main = Main:NewSection("main")
+	main:NewLabel("Made by inaya7252")
+	main:NewButton("discord", "copys the discord server of inadevs", function()
+setclipboard("https://discord.com/invite/Rdg2rTTnmk")
+        game.StarterGui:SetCore("SendNotification", {
+        Title = "Inadevs";
+        Text = "Discord Copied to Clipboard!";
+         
+        Duration = 5;
+        })
+end)
+main:NewButton("youtube:", "Copys our youtube channel into your clipboard.", function()
+        setclipboard("https://www.youtube.com/channel/UCQcfRItth2-1ai7h8IW5dCg")
+        game.StarterGui:SetCore("SendNotification", {
+        Title = "Inadevs";
+        Text = "Youtube Copied to Clipboard!";
+         
+        Duration = 5;
+        })
+    end)
+	main:NewButton("roblox group:", "Copys our roblox group into your clipboard.", function()
+        setclipboard("https://www.roblox.com/groups/16475875/inadevs#!/about")
+        game.StarterGui:SetCore("SendNotification", {
+        Title = "Inadevs";
+        Text = "Our roblox group has been copied to clipboard!";
+         
+        Duration = 5;
+        })
+    end)
+    -- inatools
+    local Main = Window:NewTab("inatools")
+    local inatools = Main:NewSection("simple spy")
+    inatools:NewButton("simple spy", "opens simple spy", function()
+wait(2)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua"))()
+end)
+inatools:NewButton("simple spy info", "gives info over simple spy", function()
+  game.StarterGui:SetCore("SendNotification", {
+        Title = "Inadevs";
+        Text = "Simple spy is an script/program that scans the code of what the feature you do. Like getting wood in lumber tycoon 2,etc";
+         
+        Duration = 3;
+        })
+		wait(3)
+		game.StarterGui:SetCore("SendNotification", {
+        Title = "Inadevs";
+        Text = "But with good anti cheat games like oaklands simple spy is not gonna work well thats why for a beginner this is usefull but i would not try to use it like a game like oaklands.";
+         
+        Duration = 3;
+        })
+		wait(3)
+		game.StarterGui:SetCore("SendNotification", {
+        Title = "Inadevs";
+        Text = "Try to use simple spy in a game with a bad anti cheat if your a starter.";
+         
+        Duration = 3;
+        })
+		end)
+local inatools = Main:NewSection("dark x")
+inatools:NewButton("dark x", "opens dark x", function()
+wait(2)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+end)
+inatools:NewButton("dark x info", "gives info about dark x", function()
+game.StarterGui:SetCore("SendNotification", {
+        Title = "Inadevs";
+        Text = "Dark x is a program/script that gives you the game files, this uses every dev(eloper) to bypass anti cheat.";
+         
+        Duration = 3;
+        })
+		end)
+
+local inatools = Main:NewSection("infinity yield")
+inatools:NewButton("infinity yield", "opens infinity yield", function()
+wait(2)
+ loadstring(game:HttpGet(("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"),true))()
+end)
+
+inatools:NewButton("infinity yield info", "gives info about infinity yield", function()
+game.StarterGui:SetCore("SendNotification", {
+        Title = "Inadevs";
+        Text = "Infinity yield is an script that has everything fly,noclip,etc we dev(elopers) use it for to make specially tp its really good.";
+         
+        Duration = 3;
+        })
+end)
+local Main = Window:NewTab("UI")
+    local gui = Main:NewSection("toggle UI")
+gui:NewKeybind("toggle UI", "Toggles the UI", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
